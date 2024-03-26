@@ -25,6 +25,11 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats:" stats={data} />
+      <ul className="friend-list">
+        {friends.map(friend => (
+          <FriendList key={friend.id} {...friend} />
+        ))}
+      </ul>
     </div>
   );
 };
