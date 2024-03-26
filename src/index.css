@@ -17,3 +17,11 @@ code {
   display: flex;
   flex-direction: column;
 }
+.table-th,
+.table-td {
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
