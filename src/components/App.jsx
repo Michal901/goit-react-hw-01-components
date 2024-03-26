@@ -1,5 +1,7 @@
-import user from '../user.json';
-import data from '../data.json';
+import user from '../data/user.json';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+import FriendList from './FriendList';
 import Profile from './Profile';
 import Statistics from './Statistics';
 
