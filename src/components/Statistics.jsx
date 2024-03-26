@@ -1,27 +1,18 @@
-import {id, label, percentage} from '.data.json';
+export default function Statistics({ title, stats }) {
+  return (
+    <section className="statistics">
+      {!title ? <h2>Statistics:</h2> : <h2>{title}</h2>}
 
-export default function Statistics(title,
-  stats) {
-    return (
-<h2 class="title">Upload stats</h2>
-
-  <ul class="stat-list">
-    <li class="item">
-      <span class="label">.docx</span>
-      <span class="percentage">4%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp3</span>
-      <span class="percentage">14%</span>
-    </li>
-    <li class="item">
-      <span class="label">.pdf</span>
-      <span class="percentage">41%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp4</span>
-      <span class="percentage">12%</span>
-    </li>
-  </ul>
-            )
+      {stats.map(item => (
+        <div key={item.id}>
+          <ul className="stat-list">
+            <li className="item">
+              <span className="label">{`Label: ${item.label}`}</span>
+              <span className="percentage">{` Percentage: ${item.percentage}%`}</span>
+            </li>
+          </ul>
+        </div>
+      ))}
+    </section>
+  );
 }
