@@ -10,17 +10,7 @@ import TransactionHistory from './TransactionHistory';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-        gap: '30px',
-      }}
-    >
+    <div className="main-container">
       <Profile
         username={user.username}
         tag={user.tag}
@@ -37,7 +27,7 @@ export const App = () => {
 
       <table className="transaction-history">
         <thead>
-          <tr className="table-tr">
+          <tr className="table-tr  table-title">
             <th className="table-th">Type</th>
             <th className="table-th">Amount</th>
             <th className="table-th">Currency</th>

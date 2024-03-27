@@ -7,8 +7,8 @@ export default function Statistics({ title, stats }) {
         <div key={item.id}>
           <ul className="stat-list">
             <li className="item">
-              <span className="label">{`Label: ${item.label}`}</span>
-              <span className="percentage">{` Percentage: ${item.percentage}%`}</span>
+              <span className="label">{`${item.label}`}</span>
+              <span className="percentage">{`${item.percentage}%`}</span>
             </li>
           </ul>
         </div>

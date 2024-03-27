@@ -13,9 +13,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  margin: 0;
+}
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40;
+  color: #010101;
+  gap: 30px;
+}
+.profile {
+  text-align: center;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+.name {
+  font-size: 25px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.statistics h2 {
+  border: 1px solid #aaa;
+}
+.stat-list {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-top: transparent;
+}
+.stats {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.stats li {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
 .item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.percentage {
+  text-align: center;
 }
 .table-th,
 .table-td {
@@ -24,4 +76,24 @@ code {
   text-align: center;
   border-bottom: 1px solid #aaa;
   border-right: 1px solid #aaa;
+}
+.table-title {
+  background-color: cadetblue;
+}
+.friend-list .item {
+  padding: 25px;
+  position: relative;
+}
+.friend-list .status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.online {
+  background-color: green;
+}
+.offline {
+  background-color: red;
 }
