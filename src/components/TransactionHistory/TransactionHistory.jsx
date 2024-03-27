@@ -1,4 +1,5 @@
 import './TransactionHistory.css';
+import { PropTypes } from 'react';
 
 export default function TransactionHistory({ items }) {
   return (
@@ -13,3 +14,6 @@ export default function TransactionHistory({ items }) {
     </>
   );
 }
+TransactionHistory.propTypes = {
+  items: PropTypes.string,
+};

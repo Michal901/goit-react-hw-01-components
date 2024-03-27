@@ -1,4 +1,5 @@
 import './Statistics.css';
+import { PropTypes } from 'react';
 
 export default function Statistics({ title, stats }) {
   return (
@@ -18,3 +19,7 @@ export default function Statistics({ title, stats }) {
     </section>
   );
 }
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.string,
+};
