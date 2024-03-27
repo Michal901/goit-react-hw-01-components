@@ -1,0 +1,33 @@
+.statistics h2 {
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+.stat-list {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-top: transparent;
+}
+.stats {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.stats li {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.stats li:last-child {
+  border-right: transparent;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.percentage {
+  text-align: center;
+}

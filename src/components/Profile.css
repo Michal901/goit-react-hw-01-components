@@ -1,0 +1,16 @@
+.profile {
+  text-align: center;
+  border: 1px solid #aaa;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+.name {
+  font-size: 25px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

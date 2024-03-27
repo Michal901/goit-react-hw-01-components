@@ -1,3 +1,5 @@
+import './FriendList.css';
+
 export default function FriendList({ avatar, name, isOnline }) {
   return (
     <>

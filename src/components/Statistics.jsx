@@ -1,3 +1,5 @@
+import './Statistics.css';
+
 export default function Statistics({ title, stats }) {
   return (
     <section className="statistics">
