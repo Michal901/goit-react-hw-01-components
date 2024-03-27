@@ -1,5 +1,5 @@
 import './TransactionHistory.css';
-import { PropTypes } from 'react';
+import PropTypes from 'prop-types';
 
 export default function TransactionHistory({ items }) {
   return (
@@ -15,5 +15,12 @@ export default function TransactionHistory({ items }) {
   );
 }
 TransactionHistory.propTypes = {
-  items: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
