@@ -27,6 +27,7 @@ code {
 }
 .profile {
   text-align: center;
+  border: 1px solid #aaa;
 }
 .avatar {
   width: 100px;
@@ -42,6 +43,7 @@ code {
 }
 .statistics h2 {
   border: 1px solid #aaa;
+  padding: 10px;
 }
 .stat-list {
   padding: 20px;
@@ -51,7 +53,6 @@ code {
 .stats {
   display: flex;
   list-style: none;
-  gap: 10px;
   padding: 0;
 }
 
@@ -59,7 +60,11 @@ code {
   width: 90px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.stats li:last-child {
+  border-right: transparent;
 }
 .item {
   display: flex;
@@ -83,6 +88,8 @@ code {
 .friend-list .item {
   padding: 25px;
   position: relative;
+  border: 1px solid #aaa;
+  margin: 10px;
 }
 .friend-list .status {
   width: 20px;
